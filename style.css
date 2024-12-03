@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    max-width: 1000px;
+    background-color: #212121;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(202, 199, 199);
+}
+
+h1{ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(202, 199, 199);
+}
+
+img{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+body{
+    background-color: #212121;
+}
+
+.container-fluid{
+    background-color: rgb(255, 72, 5);
+}
+
+
+
+.nav-link:hover {
+    border-bottom: 2px solid black; /* Adiciona uma linha abaixo */
+    color: black;
+    transition: 0.3s;
+}
+
+
+.custom-navbar {
+    background-color: rgb(255, 72, 5); /* Cor de fundo laranja-avermelhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    display: flex; /* Flexbox para organização */
+    justify-content: space-between; /* Distribui os itens de forma espaçada */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    
+}
+
+.custom-navbar a {
+    color: #fff; /* Cor do texto branca para contraste */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 20px; /* Tamanho de fonte */
+    font-weight: bold; /* Negrito */
+    margin: 0 15px; /* Espaçamento entre os links */
+    padding: 5px 10px; /* Espessura interna dos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: all 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.custom-navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo suave ao passar o mouse */
+    color: #fff; /* Manter o texto branco */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho do link */
+}
+
+.custom-navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Seleciona a imagem dentro da classe .navbar-brand e aplica a rotação */
+.custom-navbar .navbar-brand img {
+    width: 190px; /* Mantém o tamanho atual */
+    transform: rotate(-20deg); /* Rotaciona a logo */
+    transition: transform 0.3s ease; /* Animação suave ao aplicar a rotação */
+}
+
+
+
+.custom-navbar .menu {
+    display: flex;
+    list-style: none;
+}
+
+.custom-navbar .menu li {
+    margin: 0 15px;
+}
+
+.custom-navbar .menu li a {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-navbar .menu li a:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .custom-navbar {
+        flex-direction: column; /* Organiza os itens verticalmente em telas pequenas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .custom-navbar .menu {
+        flex-direction: column; /* Menu em coluna */
+        width: 100%;
+    }
+
+    .custom-navbar .menu li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+
+.centralizado {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.rodape-colunas {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.rodape-colunas .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rodape-colunas .coluna {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.rodape-colunas h3 {
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+.rodape-colunas a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.rodape-colunas a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+
+.direitos-autorais {
+    background-color: #222; /* Cor mais escura para diferenciar dos conteúdos das colunas */
+    color: #aaa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 20px; /* Espaço entre as colunas e os direitos autorais */
+}
+
+.direitos-autorais p {
+    margin: 0;
+}
+
+
+/* Estilo para os vídeos e textos lado a lado */
+.athlete {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Alinha o conteúdo do topo */
+    justify-content: space-around;
+    margin-bottom: 40px;
+    background-color: #f2f2f2; /* Cor de fundo da caixa (exemplo de cinza claro) */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+
+.athlete iframe {
+    flex: 1; /* Faz com que o vídeo ocupe uma parte do espaço disponível */
+    max-width: 100%; /* Garante que o vídeo não ultrapasse o limite da tela */
+}
+
+.athlete div {
+    flex: 1; /* O texto ocupará o restante do espaço */
+    max-width: 500px; /* Limita a largura do texto, para que não ocupe muito espaço */
+    margin-left: 30px;
+    padding: 20px; /* Mais espaço interno */
+}
+
+.athlete h2 {
+    font-size: 1.8em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.athlete h3 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Espacamento entre os vídeos */
+.athlete + .athlete {
+    margin-top: 30px;
+}
+
+
+/* Ajustes para telas pequenas (responsividade) */
+@media (max-width: 768px) {
+    .athlete {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        text-align: center;
+    }
+}
+
+  .athlete iframe {
+        margin-bottom: 20px;
+        width: 100%; /* Garante que o vídeo ocupe toda a largura */
+    }
+
+
+/* Ajuste do carrossel */
+#carouselExampleAutoplaying {
+    max-width: 100%;   /* Garante que o carrossel ocupe toda a largura da tela */
+    margin: 0 auto;    /* Centraliza o carrossel */
+    position: relative;
+    margin-bottom: -150px;  /* Ajuste conforme necessário */
+    margin-top: 10px;
+  }
+
+  #carouselExampleAutoplaying .carousel-inner {
+    padding-bottom: 0;
+  }
+  
+  /* Define o comportamento das imagens dentro do carrossel */
+  .carousel-inner {
+    width: 100%;       /* Garante que as imagens se ajustem ao tamanho da tela */
+    height: 800px;     /* Define uma altura fixa para o carrossel */
+    overflow: hidden;  /* Esconde qualquer parte da imagem que ultrapasse os limites */
+  }
+  
+  /* Faz as imagens ocuparem toda a área e mantenham a proporção */
+  .carousel-item img {
+    width: 100%;       /* Faz a imagem ocupar toda a largura do item */
+    height: 100%;      /* A imagem vai ocupar 100% da altura do item */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+  }
+
+
+ @media (max-width: 768px) {
+    .carousel-inner {
+      height: 300px; /* Altura reduzida para telas menores */
+    }
+}
+  
+  
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
